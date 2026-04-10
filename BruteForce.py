@@ -7,7 +7,7 @@ try_count = 0
 
 def bruteForce(attempt='', length=1):
     global found, try_count
-    chars = string.ascii_letters + string.digits + string.punctuation
+    chars = string.digits + string.punctuation
     if len(attempt) == length:
         sys.stdout.write(f"\rTrying attempt: {attempt}")
         sys.stdout.flush()
